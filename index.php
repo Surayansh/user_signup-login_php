@@ -21,11 +21,11 @@ session_start();
             <a href="index.php">Contact</a>
             <a href="index.php">About us</a>
         </nav>
-        <!----session---->
+        <!----session hello---->
         <?php
         if (isset($_SESSION['logged_in']) && $_SESSION['logged_in'] == true) {
             echo "
-            <div class='user'>
+            <div class='user'> 
             Welcome $_SESSION[username]-<a href='logout.php'>LOGOUT</a>
             </div>";
         } else {
